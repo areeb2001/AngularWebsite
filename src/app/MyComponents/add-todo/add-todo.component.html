@@ -1,0 +1,40 @@
+<!-- <div style="border-style: solid; " class="my-3">
+    <h4 style="margin-left: 20px;">Add a todo</h4>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div style="margin-left: 20px;" class="form-group">
+            <label  for="title">Todo Title</label>
+            <input formControlName="titles" [ngClass]="{'is-invalid':submitted && registerForm.controls.titles.errors}" type="text" class="form-control" name="title" [(ngModel)]="title" id="title" aria-describedby="emailHelp"  >
+        </div>
+        
+        <div style="margin-left: 20px;" class="form-group">
+            <label for="desc">Description</label>
+            <input formControlName="descrip" [ngClass]="{'is-invalid':submitted && registerForm.controls.descrip.errors}" type="text" class="form-control" name="desc" id="desc" [(ngModel)]="desc" >
+        </div>
+        <div style="margin-left: 20px;">
+         <button style="margin-left: 20px;" type="submit" class="btn btn-sm btn-primary" style="margin-top: 10px;">Add Todo</button>
+        </div>
+    </form> 
+</div> -->
+
+<div style="background-color: green;" class="card">
+    <div class="card-header " style="background-color: green;color: white;font-weight: bold;font-size: large;">
+      Add Todo
+    </div>
+    <div style="background-color:lightgreen;"class="card-body">
+      
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <div style="margin-left: 20px;" class="form-group">
+                <label style="font-weight: bold;" for="title">Todo Title</label>
+                <input formControlName="titles" [ngClass]="{'is-invalid':submitted && registerForm.controls.titles.errors}" type="text" class="form-control" name="title" [(ngModel)]="title" id="title" aria-describedby="emailHelp"  >
+            </div>
+            
+            <div style="margin-left: 20px;" class="form-group">
+                <label style="font-weight: bold;" for="desc">Description</label>
+                <input formControlName="descrip" [ngClass]="{'is-invalid':submitted && registerForm.controls.descrip.errors}" type="text" class="form-control" name="desc" id="desc" [(ngModel)]="desc" >
+            </div>
+            <div style="margin-left: 20px;">
+             <button style="margin-left: 20px;" type="submit" class="btn btn-outline-success" style="margin-top: 10px;">Add Todo</button>
+            </div>
+        </form>
+    </div>
+  </div>
